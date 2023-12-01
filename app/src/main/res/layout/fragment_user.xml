@@ -12,7 +12,7 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="15sp"
-        android:text="Full name"
+        android:text="@string/ed_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
