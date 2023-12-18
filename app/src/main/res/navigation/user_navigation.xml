@@ -15,4 +15,9 @@
         android:name="com.example.binding.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.binding.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
 </navigation>
