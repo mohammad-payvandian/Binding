@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/user_navigation"
-    app:startDestination="@id/secondFragment">
+    app:startDestination="@id/buttonFragment">
 
     <fragment
         android:id="@+id/userFragment"
@@ -20,4 +20,9 @@
         android:name="com.example.binding.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/buttonFragment"
+        android:name="com.example.binding.ButtonFragment"
+        android:label="fragment_button"
+        tools:layout="@layout/fragment_button" />
 </navigation>

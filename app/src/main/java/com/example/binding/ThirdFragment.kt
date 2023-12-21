@@ -13,36 +13,36 @@ import com.example.binding.databinding.FragmentThirdBinding
 
 class ThirdFragment : Fragment() {
 
-//    override fun onCreateView(
-//        inflater: LayoutInflater, container: ViewGroup?,
-//        savedInstanceState: Bundle?
-//    ): View? {
-//        // Inflate the layout for this fragment
-//        val view = inflater.inflate(R.layout.fragment_third,container,false)
-//        val name = view.findViewById<EditText>(R.id.editText3)
-//        val family = view.findViewById<EditText>(R.id.editText)
-//
-//        val button = view.findViewById<Button>(R.id.btn_next)
-//        button.setOnClickListener {
-//            Toast.makeText(context,"hello ${name.text} ${family.text}" ,Toast.LENGTH_SHORT).show()
-//        }
-//
-//        return view
-//    }
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding: FragmentThirdBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_third, container, false)
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_third,container,false)
+        val name = view.findViewById<EditText>(R.id.editText3)
+        val family = view.findViewById<EditText>(R.id.editText)
 
-        binding.btnBefore.setOnClickListener {
-            Toast.makeText(context,"hello ${binding.editText.text} ${binding.editText3.text}",Toast.LENGTH_LONG).show()
+        val button = view.findViewById<Button>(R.id.btn_next)
+        button.setOnClickListener {
+            Toast.makeText(context,"hello ${name.text} ${family.text}" ,Toast.LENGTH_SHORT).show()
         }
 
-
-        return binding.root
-
+        return view
     }
+
+//    override fun onCreateView(
+//        inflater: LayoutInflater,
+//        container: ViewGroup?,
+//        savedInstanceState: Bundle?
+//    ): View? {
+//        val binding: FragmentThirdBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_third, container, false)
+//
+//        binding.btnBefore.setOnClickListener {
+//            Toast.makeText(context,"hello ${binding.editText.text} ${binding.editText3.text}",Toast.LENGTH_LONG).show()
+//        }
+//
+//
+//        return binding.root
+//
+//    }
 }
